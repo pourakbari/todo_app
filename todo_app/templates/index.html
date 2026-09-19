@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusList</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <div>
+            <p class="eyebrow">PERSONAL PRODUCTIVITY</p>
+            <h1>Focus<span>List</span></h1>
+            <p class="subtitle">Turn your plans into progress.</p>
+        </div>
+
+        <button id="themeButton" class="theme-button">
+            ☀
+        </button>
+    </header>
+
+
+    <section class="stats">
+
+        <div class="stat">
+            <span id="totalCount">0</span>
+            <small>Total</small>
+        </div>
+
+        <div class="stat">
+            <span id="completedCount">0</span>
+            <small>Completed</small>
+        </div>
+
+        <div class="stat">
+            <span id="remainingCount">0</span>
+            <small>Remaining</small>
+        </div>
+
+    </section>
+
+
+    <section class="add-box">
+
+        <input
+            id="taskInput"
+            type="text"
+            placeholder="What needs to be done?"
+            autocomplete="off"
+        >
+
+        <button id="addButton">
+            Add Task
+        </button>
+
+    </section>
+
+
+    <main>
+
+        <div class="section-header">
+            <h2>My Tasks</h2>
+
+            <button id="clearCompleted">
+                Clear completed
+            </button>
+        </div>
+
+        <div id="taskList"></div>
+
+        <div id="emptyState" class="empty-state">
+            <div class="empty-icon">✓</div>
+            <h3>Nothing here yet</h3>
+            <p>Add your first task and start making progress.</p>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <span>FocusList</span>
+        <span>Built with Python + Flask + SQLite</span>
+    </footer>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
